@@ -2,7 +2,6 @@ import pytest
 from project import qr_file, qr_gen, vcart
 
 
-
 test_data = f"""BEGIN:VCARD
 VERSION:4.0
 FN:
@@ -18,13 +17,6 @@ END:VCARD"""
 
 def test_vcart():
     assert vcart() == test_data
-
-# def test_qr_file():
-#     assert qr_file(data, "file") == None
-
-# def test_qr_file():
-#     with pytest.raises(TypeError):
-#         qr_file(1, "file")
 
 
 def test_qr():
